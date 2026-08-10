@@ -1,0 +1,531 @@
+Design a complete modern Android mobile app UI/UX for a customer complaint and rider tracking application.
+
+The app is for customers who submit complaints or service requests. The customer does NOT assign a rider. Rider assignment is completely controlled by the admin through a separate web based admin dashboard.
+
+The customer can submit a complaint by writing a description and optionally uploading up to 2 pictures. After submission, the complaint remains Pending until the admin manually assigns a rider.
+
+Once the admin assigns a rider, the customer can see the assigned rider's basic information and the rider's current live location on a map.
+
+IMPORTANT SYSTEM RULES
+
+The customer cannot select a rider.
+
+The customer cannot assign a rider.
+
+The customer cannot choose a vehicle.
+
+The customer cannot see a list of available riders.
+
+The admin manually assigns the rider.
+
+Before assignment the complaint status is "Pending".
+
+After assignment the rider's current live location becomes visible to the customer.
+
+CUSTOMER BOTTOM NAVIGATION
+
+1. Home
+
+2. My Complaints
+
+3. Notifications
+
+4. Profile
+
+5. SPLASH SCREEN
+
+Show:
+App logo
+App name
+
+Use a clean professional design related to customer service and rider tracking.
+
+2. ONBOARDING
+
+Create 3 onboarding screens:
+
+Submit your complaint easily
+Upload pictures when needed
+Track your assigned rider live
+
+Include:
+Skip
+Next
+Get Started
+
+3. LOGIN
+
+Create a phone number login screen.
+
+Field:
+Phone Number
+
+Button:
+Continue
+
+4. OTP VERIFICATION
+
+Show:
+Phone number
+OTP input boxes
+Verify button
+Resend OTP timer
+
+5. HOME SCREEN
+
+Create a simple customer dashboard.
+
+Show:
+
+Welcome message
+
+Primary button:
+Submit Complaint
+
+Complaint summary:
+
+Pending
+Rider Assigned
+In Progress
+Completed
+
+Show recent complaints below the summary.
+
+Do NOT make this a ride booking screen.
+
+6. SUBMIT COMPLAINT
+
+Keep the complaint form extremely simple.
+
+There should be ONLY:
+
+Description box
+
+Placeholder:
+"Describe your complaint..."
+
+And:
+
+Upload Pictures
+
+The picture upload is OPTIONAL.
+
+Allow a maximum of 2 pictures.
+
+Show selected pictures as previews.
+
+Each image preview should have a remove button.
+
+Display:
+
+"You can upload up to 2 pictures"
+
+The customer can submit the complaint with no pictures.
+
+Button:
+Submit Complaint
+
+There should be NO:
+
+Complaint category field
+Complaint title field
+Vehicle field
+Rider selection field
+Other unnecessary form fields
+
+7. COMPLAINT SUBMITTED
+
+After submission show:
+
+Complaint Submitted
+
+Complaint ID
+Submission date
+
+Status:
+
+Pending
+
+Message:
+
+"Your complaint has been submitted successfully. Please wait while our admin team reviews your complaint and assigns a rider."
+
+Button:
+View Complaint
+
+8. MY COMPLAINTS
+
+Create a complaint history screen.
+
+Each complaint card should show:
+
+Complaint ID
+Short description preview
+Date
+Status
+
+Possible statuses:
+
+Pending
+Rider Assigned
+In Progress
+Completed
+
+9. COMPLAINT DETAILS
+
+Show:
+
+Complaint ID
+Full complaint description
+Submitted date
+Uploaded pictures if any
+Current status
+
+When the complaint is Pending:
+
+Status:
+Pending
+
+Message:
+
+"Waiting for rider assignment"
+
+Do NOT show a rider or map at this stage.
+
+10. RIDER ASSIGNED
+
+When the admin assigns a rider, update the complaint status to:
+
+Rider Assigned
+
+Show only basic rider information:
+
+Rider profile picture
+Rider name
+Rider rating
+
+Do NOT show:
+
+Vehicle model
+Vehicle color
+Vehicle registration number
+
+Show a map containing the rider's current live location.
+
+Add:
+
+Track Rider
+
+11. LIVE RIDER TRACKING
+
+Create a map based tracking screen.
+
+Show:
+
+Customer location
+Assigned rider's current location
+Map
+Live rider movement
+
+The rider should appear as a moving marker.
+
+Display:
+
+Live Location
+
+Bottom card:
+
+Rider profile picture
+Rider name
+Rider rating
+Estimated arrival time
+Current distance
+
+Buttons:
+
+Call Rider
+Contact Support
+
+The customer cannot change the assigned rider.
+
+12. RIDER INFORMATION
+
+Create a rider information bottom sheet.
+
+Show:
+
+Rider profile picture
+Rider name
+Rider rating
+
+Buttons:
+
+Call Rider
+Contact Support
+
+Do NOT display vehicle details.
+
+13. IN PROGRESS
+
+When the rider starts handling the complaint, change the status to:
+
+In Progress
+
+Show:
+
+Complaint details
+Assigned rider
+Current rider location where applicable
+Progress information
+
+14. COMPLETED
+
+When the complaint is completed, show:
+
+Status:
+Completed
+
+Display:
+
+Complaint ID
+Complaint description
+Submission date
+Completion date
+Assigned rider
+Resolution or completion information
+
+Show uploaded pictures if the customer submitted any.
+
+15. NOTIFICATIONS
+
+Create a notification screen.
+
+Examples:
+
+"Your complaint has been submitted"
+"Your complaint is pending review"
+"A rider has been assigned to your complaint"
+"Your assigned rider is on the way"
+"Your complaint is now in progress"
+"Your complaint has been completed"
+
+Show:
+Notification icon
+Message
+Timestamp
+
+16. PROFILE
+
+Create a profile screen.
+
+Show:
+
+Profile picture
+Name
+Phone number
+Email
+
+Options:
+
+Edit Profile
+My Complaints
+Notifications
+Help & Support
+Privacy Policy
+Terms & Conditions
+Logout
+
+17. EDIT PROFILE
+
+Allow the customer to update:
+
+Profile picture
+Name
+Phone number
+Email
+
+Button:
+Save Changes
+
+18. HELP & SUPPORT
+
+Create:
+
+Frequently Asked Questions
+Contact Support
+Report an Issue
+Safety Information
+
+19. EMPTY STATES
+
+Create empty states for:
+
+No complaints:
+
+"No complaints yet"
+
+No notifications:
+
+"No new notifications"
+
+20. ERROR STATES
+
+Create error screens or messages for:
+
+Complaint submission failed
+Picture upload failed
+Unable to load complaint
+Unable to load rider information
+Unable to load live rider location
+Network connection lost
+
+21. LOADING STATES
+
+Create loading states for:
+
+Submitting complaint
+Uploading pictures
+Loading complaint
+Loading rider information
+Loading live rider location
+
+22. MAP BEHAVIOR
+
+Before rider assignment:
+
+Do NOT show any rider location.
+
+Show the complaint status as Pending.
+
+After rider assignment:
+
+Show the assigned rider's current live location.
+
+The rider marker should clearly indicate that the location is live.
+
+23. DESIGN SYSTEM
+
+Create a professional modern mobile design system.
+
+Use:
+
+Clean background
+Strong primary accent color
+Readable typography
+Rounded cards
+Rounded buttons
+Modern icons
+Consistent spacing
+Accessible contrast
+Minimal shadows
+
+Create reusable components for:
+
+Complaint cards
+Status badges
+Description fields
+Image upload components
+Image preview cards
+Notification cards
+Rider information cards
+Map cards
+Bottom sheets
+Dialogs
+Buttons
+Toast messages
+
+24. STATUS SYSTEM
+
+Make the complaint status highly visible.
+
+Pending:
+
+Complaint submitted and waiting for admin to assign a rider.
+
+Rider Assigned:
+
+Admin has manually assigned a rider and the rider's live location is now available.
+
+In Progress:
+
+The assigned rider is handling the complaint.
+
+Completed:
+
+The complaint has been completed.
+
+25. COMPLETE PROTOTYPE FLOW
+
+FLOW 1:
+
+Splash
+→ Onboarding
+→ Login
+→ OTP
+→ Home
+
+FLOW 2:
+
+Home
+→ Submit Complaint
+→ Write Description
+→ Optionally Upload 0 to 2 Pictures
+→ Submit Complaint
+→ Complaint Submitted
+→ Complaint Details
+→ Status: Pending
+
+FLOW 3:
+
+Complaint Details
+→ Admin assigns rider
+→ Status changes to Rider Assigned
+→ Rider information appears
+→ Live rider location appears
+→ Track Rider
+
+FLOW 4:
+
+Track Rider
+→ Rider starts handling complaint
+→ Status: In Progress
+→ Complaint completed
+→ Status: Completed
+
+FLOW 5:
+
+Home
+→ My Complaints
+→ Complaint Details
+→ View description
+→ View uploaded pictures
+→ View status
+→ View assigned rider
+→ Track live location
+
+FINAL PRODUCT PRINCIPLE
+
+This is NOT a ride booking application.
+
+The customer does not book a ride.
+
+The customer does not choose a rider.
+
+The customer does not enter vehicle information.
+
+The customer only:
+
+Submits a complaint
+Writes a description
+Optionally uploads up to 2 pictures
+Views complaint status
+Receives notifications
+Views the assigned rider
+Tracks the assigned rider's live location
+Views completed complaints
+
+The admin handles rider assignment.
+
+The rider handles the assigned complaint and provides live location data.
+
+Create the final Figma design as a polished production ready Android mobile application with organized screens, reusable components, realistic states, and complete clickable prototype flows.

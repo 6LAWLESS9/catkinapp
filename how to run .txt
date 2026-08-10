@@ -1,0 +1,5 @@
+npx expo start
+
+w for web
+a for android
+also scan the code using expo go application on mobile
